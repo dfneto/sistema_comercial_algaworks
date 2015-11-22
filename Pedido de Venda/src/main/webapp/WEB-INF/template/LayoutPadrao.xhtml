@@ -16,6 +16,15 @@
     </h:head>
 
     <h:body>
+        <p:ajaxStatus styleClass="ajax-status" >
+            <f:facet name="start">
+                <h:graphicImage library="images" name="loading.gif" />
+            </f:facet>
+            <f:facet name="complete">
+                <h:outputLabel value="" />
+            </f:facet>
+        </p:ajaxStatus>
+
         <header>
             <div>
                 <h:link>
@@ -24,16 +33,17 @@
             </div>
         </header>
 
+        <div id="conteudo">
+            <ui:insert name="corpo"/>
+        </div>
+
+        <p:separator style="margin-top: 20px" />
+
+        <footer>
+            Curso online algaworks
+        </footer>
+
     </h:body>
 
-    <div id="conteudo">
-        <ui:insert name="corpo"/>
-    </div>
-
-    <p:separator style="margin-top: 20px" />
-
-    <footer>
-        Curso online algaworks
-    </footer>
 
 </html>
