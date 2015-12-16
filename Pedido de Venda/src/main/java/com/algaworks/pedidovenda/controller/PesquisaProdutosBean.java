@@ -5,9 +5,6 @@ import javax.faces.bean.RequestScoped;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by david on 27/11/2015.
- */
 @ManagedBean
 @RequestScoped
 public class PesquisaProdutosBean {
