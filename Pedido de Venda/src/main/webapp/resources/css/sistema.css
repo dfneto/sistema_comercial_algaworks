@@ -76,3 +76,20 @@ h1 {
 .ui-selectmanycheckbox td label {
     padding: 10px !important;
 }
+
+/* Menu sistema INÍCIO */
+.menu-sistema {
+    border: 0px !important;
+    padding: 0px !important;
+    background: none !important;
+}
+
+.menu-sistema .ui-menu-parent > a .ui-menuitem-text, .menu-sistema > .ui-menu-list > .ui-menuitem > a > .ui-menuitem-text {
+    color: #ffffff !important;
+}
+
+.menu-sistema .ui-icon-triangle-1-s {
+    /*background: url(#{resource[ 'images:seta-para-baixo.png' ]}) no-repeat; */
+    solid-color: white;
+}
+/* Menu sistema FIM */
