@@ -34,6 +34,7 @@ public class Teste {
         endereco.setCidade("Belem");
         endereco.setUf("PA");
         endereco.setCep("66035-090");
+        endereco.setCliente(cliente);
 
         cliente.getEnderecos().add(endereco);
 

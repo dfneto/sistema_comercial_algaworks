@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Table(name = "cliente")
 public class Cliente implements Serializable {
 
     private Long id;
@@ -25,6 +26,7 @@ public class Cliente implements Serializable {
         this.id = id;
     }
 
+    @Column(nullable = false, length = 100)
     public String getNome() {
         return nome;
     }
@@ -33,6 +35,7 @@ public class Cliente implements Serializable {
         this.nome = nome;
     }
 
+    @Column(nullable = false, length = 255)
     public String getEmail() {
         return email;
     }
@@ -41,6 +44,7 @@ public class Cliente implements Serializable {
         this.email = email;
     }
 
+    @Column(name = "doc_receita_federal", nullable = false, length = 14)
     public String getDocumentoReceitaFederal() {
         return documentoReceitaFederal;
     }
@@ -58,6 +62,8 @@ public class Cliente implements Serializable {
         this.enderecos = enderecos;
     }
 
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, length = 10)
     public TipoPessoa getTipoPessoa() {
         return tipoPessoa;
     }
