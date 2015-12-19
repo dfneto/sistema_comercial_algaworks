@@ -13,7 +13,7 @@ import javax.persistence.Persistence;
 /**
  * Created by david on 15/12/2015.
  */
-public class Teste {
+public class TesteCliente {
 
     public static void main(String[] args) {
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("PedidoPU");
@@ -26,7 +26,7 @@ public class Teste {
         cliente.setNome("Paulo Nunes");
         cliente.setEmail("joao@couves.com");
         cliente.setDocumentoReceitaFederal("123.123.123-12");
-        cliente.setTipoPessoa(TipoPessoa.FISICA);
+        cliente.setTipo(TipoPessoa.FISICA);
 
         Endereco endereco = new Endereco();
         endereco.setLogradouro("Rua A");
